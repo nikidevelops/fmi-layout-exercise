@@ -1,0 +1,28 @@
+.popular-place-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4rem;
+  color: white;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+  .image {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1rem;
+    background: theme-color("secondary") no-repeat center;
+    background-size: cover;
+    border-radius: $border-radius-xlg;
+  }
+  h5,
+  h6 {
+    margin-bottom: 0;
+  }
+  p {
+    color: theme-color("secondary-lighter");
+    margin-bottom: 0;
+  }
+}

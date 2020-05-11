@@ -1,0 +1,30 @@
+.promo-card {
+  display: flex;
+  min-height: 235px;
+  background: theme-color("dark");
+  border-radius: $border-radius-xlg;
+  .image {
+    display: block;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 $border-radius-xlg $border-radius-xlg 0;
+  }
+  .texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: $spacer * 2.5;
+    width: 51.25%;
+    h5 {
+      font-weight: normal;
+      line-height: 1.75rem;
+    }
+    p {
+      // font-size: $font-size-xsm;
+      color: theme-color("secondary-lighter");
+    }
+  }
+}

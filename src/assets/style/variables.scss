@@ -1,0 +1,38 @@
+$body-bg: #232a33;
+$body-color: #ffffff;
+
+$theme-colors: (
+  "primary": #e2a60d,
+  "secondary": #333941,
+  "light": #8897a1,
+  "secondary-lighter": #86959f,
+  "text-primary": red,
+  "dark": #1a2029,
+);
+
+// border radius
+$border-radius-xlg: 0.9rem;
+
+// Fonts
+$font-family-sans-serif: "Roboto", sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+// Font weight
+$font-weight-semibold: 600;
+
+// Font sizes
+$font-size-xsm: 0.675rem;
+$font-size-sm: 0.75rem;
+$font-size-md: 1rem;
+
+// Buttons
+// $input-btn-font-size: 0.75rem;
+// $btn-font-size: $input-btn-font-size;
+$btn-font-weight: $font-weight-semibold;
+$btn-padding-y: 0.35rem;
+$btn-padding-x: 2rem;
+$btn-padding-y-lg: 0.35rem;
+$btn-padding-x-lg: 2.625rem;
+$btn-border-radius: 2rem;
+$btn-border-radius-sm: 1rem;
+$btn-border-radius-lg: 3rem;

@@ -1,0 +1,16 @@
+.sponsors-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sponsors-list-item {
+  display: flex;
+  color: theme-color("secondary-lighter");
+  padding: 0 $spacer;
+  padding-right: $spacer * 1.5;
+  border-right: 1px solid theme-color("secondary");
+  small {
+    line-height: 1rem;
+  }
+}
