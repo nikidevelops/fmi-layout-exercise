@@ -27,23 +27,29 @@ function App() {
         </PageSection>
         <PageSection title="Popular">
           <div className="d-flex overflow-auto">
-            {constants.popularPlaces.map(({ title, image }) => (
-              <PopularPlaceHorizontal title={title} image={image} />
+            {constants.popularPlaces.map(({ title, image }, index) => (
+              <PopularPlaceHorizontal
+                key={`pp${index}`}
+                title={title}
+                image={image}
+              />
             ))}
           </div>
         </PageSection>
         <hr />
         <PageSection title="Exiting promotions start here">
           <div className="row">
-            {constants.promotionCards.map(({ title, description, image }) => (
-              <div className="col-md-6">
-                <PromotionCard
-                  title={title}
-                  description={description}
-                  image={image}
-                />
-              </div>
-            ))}
+            {constants.promotionCards.map(
+              ({ title, description, image }, index) => (
+                <div key={`pc${index}`} className="col-md-6">
+                  <PromotionCard
+                    title={title}
+                    description={description}
+                    image={image}
+                  />
+                </div>
+              )
+            )}
           </div>
         </PageSection>
         <PageSection title="Providers">
